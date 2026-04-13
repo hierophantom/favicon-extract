@@ -77,9 +77,16 @@ npm test
 
 This repo includes a small visual test harness under `demo/`.
 
+Hosted demo:
+
+```text
+https://hierophantom.github.io/favicon-extract/
+```
+
 ```bash
 npm install
 npm run build
+npm run build:site
 npm run demo
 ```
 
@@ -88,3 +95,5 @@ Then open:
 ```text
 http://localhost:4173/
 ```
+
+The GitHub Pages deployment is handled by the Pages workflow on pushes to `main`.

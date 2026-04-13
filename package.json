@@ -26,6 +26,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "build:site": "node scripts/prepare-site.mjs",
     "test": "vitest run",
     "dev": "vitest",
     "demo": "node demo/server.mjs",
@@ -36,7 +37,8 @@
     "icons",
     "website",
     "url",
-    "extract"
+    "extract",
+    "favicon-resolver"
   ],
   "devDependencies": {
     "typescript": "^5.6.0",
