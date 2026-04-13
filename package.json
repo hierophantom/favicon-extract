@@ -2,10 +2,19 @@
   "name": "favicon-extract",
   "version": "0.1.0",
   "description": "A tiny library that discovers, normalizes, and resolves the best favicon for a URL.",
+  "author": "Lior Matza",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hierophantom/favicon-extract.git"
+  },
+  "homepage": "https://github.com/hierophantom/favicon-extract#readme",
+  "bugs": {
+    "url": "https://github.com/hierophantom/favicon-extract/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -19,6 +28,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "dev": "vitest",
+    "demo": "node demo/server.mjs",
     "prepublishOnly": "npm run build"
   },
   "keywords": [

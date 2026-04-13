@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>favicon-extract demo</title>
+  <link rel="stylesheet" href="/demo/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">Demo</p>
+      <h1>favicon-extract</h1>
+      <p class="subtitle">Inspect normalization, selected source, and the ordered candidate list.</p>
+    </header>
+
+    <section class="panel controls">
+      <label for="url-input">URL to test</label>
+      <div class="row">
+        <input id="url-input" type="text" value="https://docs.google.com/document/d/abc123/edit" />
+        <button id="resolve-btn" type="button">Resolve</button>
+      </div>
+      <div class="row compact">
+        <label class="checkbox">
+          <input id="probe-checkbox" type="checkbox" />
+          <span>Probe with fetch</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel results">
+      <h2>Result</h2>
+      <div id="summary" class="summary empty">Run a test to see resolution details.</div>
+      <div class="preview-wrap">
+        <img id="resolved-favicon" alt="Resolved favicon preview" width="32" height="32" />
+        <span id="resolved-favicon-label">No favicon selected yet</span>
+      </div>
+    </section>
+
+    <section class="panel candidates">
+      <h2>Candidates</h2>
+      <ol id="candidate-list"></ol>
+    </section>
+  </main>
+
+  <script>
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = '/demo/app.js';
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>

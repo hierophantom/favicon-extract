@@ -72,3 +72,19 @@ npm install
 npm run build
 npm test
 ```
+
+## Demo
+
+This repo includes a small visual test harness under `demo/`.
+
+```bash
+npm install
+npm run build
+npm run demo
+```
+
+Then open:
+
+```text
+http://localhost:4173/
+```
