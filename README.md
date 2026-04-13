@@ -13,14 +13,9 @@ Originally extracted from a production bookmark manager codebase into a standalo
 
 ## Usage Right Now
 
-Use the repository directly for now. The package is not published to npm yet.
+Use the repository directly for now. This project is currently distributed through GitHub, not npm.
 
-You can clone it locally and build it with:
-
-```bash
-npm install
-npm run build
-```
+If you just want to evaluate behavior, use the hosted demo or clone the repo and run the local demo.
 
 ## API
 
@@ -77,14 +72,6 @@ Priority:
 - Candidate ordering is deterministic and based on host heuristics.
 - Optional probing can verify candidates using a user-supplied fetch implementation.
 
-## Development
-
-```bash
-npm install
-npm run build
-npm test
-```
-
 ## Demo
 
 This repo includes a small visual test harness under `demo/`.
@@ -95,10 +82,11 @@ Hosted demo:
 https://hierophantom.github.io/favicon-extract/
 ```
 
+Local demo:
+
 ```bash
 npm install
 npm run build
-npm run build:site
 npm run demo
 ```
 
@@ -109,6 +97,16 @@ http://localhost:4173/
 ```
 
 The GitHub Pages deployment is handled by the Pages workflow on pushes to `main`.
+
+## Development
+
+Examples below use npm for local repo development:
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## Release Notes
 
