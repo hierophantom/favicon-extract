@@ -9,11 +9,17 @@ Originally extracted from a production bookmark manager codebase into a standalo
 - Current version: `0.1.0`
 - Source of truth: GitHub-first library release
 - Changelog: `./CHANGELOG.md`
+- npm status: not published yet
 
-## Install
+## Usage Right Now
+
+Use the repository directly for now. The package is not published to npm yet.
+
+You can clone it locally and build it with:
 
 ```bash
-npm install favicon-extract
+npm install
+npm run build
 ```
 
 ## API
