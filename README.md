@@ -4,6 +4,12 @@ A tiny library that discovers, normalizes, and resolves the best favicon for a U
 
 Originally extracted from a production bookmark manager codebase into a standalone, framework-agnostic package.
 
+## Status
+
+- Current version: `0.1.0`
+- Source of truth: GitHub-first library release
+- Changelog: `./CHANGELOG.md`
+
 ## Install
 
 ```bash
@@ -97,3 +103,18 @@ http://localhost:4173/
 ```
 
 The GitHub Pages deployment is handled by the Pages workflow on pushes to `main`.
+
+## Release Notes
+
+### v0.1.0
+
+`v0.1.0` is the initial standalone extraction release.
+
+Highlights:
+
+- Extracts favicon resolution into an environment-agnostic TypeScript library.
+- Keeps the first public API intentionally small around `resolveFavicon(...)`.
+- Includes deterministic candidate ordering and optional live probing.
+- Ships with tests, CI, a local demo, and a GitHub Pages demo pipeline.
+
+For the detailed history, see `CHANGELOG.md`.
